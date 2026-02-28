@@ -377,14 +377,6 @@ All tests use mocks for Endee and the embedding model — no live server require
 
 ---
 
-## 📥 Clone the Repository
-
-First, clone this repository to your local machine:
-
-```bash
-git clone https://github.com/vishalkumar-swe/documind-rag-endee.git
-cd documind-rag-endee
-
 ---
 
 ## 🔄 Example Walkthrough
@@ -431,6 +423,14 @@ All required steps for the project-based evaluation have been completed.
 ```
 
 ---
+
+## 📥 Clone the Repository
+
+Clone this project to your local machine:
+
+```bash
+git clone https://github.com/vishalkumar-swe/documind-rag-endee.git
+cd documind-rag-endee
 
 ## 📄 License
 
