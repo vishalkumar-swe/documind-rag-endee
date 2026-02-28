@@ -1,4 +1,4 @@
-# 📚 DocuMind — RAG-Powered Document Q&A System
+# DocuMind — RAG-Powered Document Q&A System
 
 > **Retrieval-Augmented Generation (RAG) using the [Endee](https://github.com/endee-io/endee) vector database**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 🗂 Table of Contents
+##  Table of Contents
 
 - [Problem Statement](#-problem-statement)
 - [System Design](#-system-design)
@@ -24,7 +24,7 @@
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Knowledge workers spend enormous time searching through large document collections for specific answers.  
 Traditional keyword search fails to capture *semantic meaning* — a query for "climate solutions" won't match a passage about "carbon-reduction strategies" even though they mean the same thing.
@@ -37,7 +37,7 @@ Traditional keyword search fails to capture *semantic meaning* — a query for "
 
 ---
 
-## 🏗 System Design
+## System Design
 
 ```
 ┌───────────────────────────────────────────────────────────────┐
@@ -81,7 +81,7 @@ Traditional keyword search fails to capture *semantic meaning* — a query for "
 
 ---
 
-## 🗄 How Endee Is Used
+##  How Endee Is Used
 
 Endee is the **core vector storage and retrieval engine** of DocuMind. Every interaction with the knowledge base goes through Endee.
 
@@ -139,7 +139,7 @@ results = index.query(vector=query_vector, top_k=5)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 documind/
@@ -158,7 +158,7 @@ documind/
 
 ---
 
-## ⚙️ Setup and Installation
+##  Setup and Installation
 
 ### Prerequisites
 
@@ -213,7 +213,7 @@ cp .env.example .env
 
 ---
 
-## 🚀 Running the Application
+##  Running the Application
 
 ### Option A — CLI Demo (Quickest)
 
@@ -273,7 +273,7 @@ Both services start:
 
 ---
 
-## 🔌 API Reference
+##  API Reference
 
 ### `POST /ingest/text`
 
@@ -350,7 +350,7 @@ Service health check.
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 python -m pytest tests/ -v
@@ -366,7 +366,7 @@ All tests use mocks for Endee and the embedding model — no live server require
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 | Environment Variable | Default | Description |
 |---|---|---|
@@ -403,7 +403,7 @@ print(result["answer"])
 
 ---
 
-## ✅ Evaluation Compliance
+##  Evaluation Compliance
 
 This project strictly follows the mandatory evaluation guidelines:
 
@@ -413,9 +413,9 @@ This project strictly follows the mandatory evaluation guidelines:
 - 🍴 Forked the Endee repository to my personal GitHub account:  
   https://github.com/vishalkumar-swe/endee
 
-- 🧠 Implemented a complete RAG (Retrieval-Augmented Generation) system using Endee as the core vector database.
+-  Implemented a complete RAG (Retrieval-Augmented Generation) system using Endee as the core vector database.
 
-- 🚀 Hosted the full project publicly on GitHub with complete setup and execution instructions.
+- Hosted the full project publicly on GitHub with complete setup and execution instructions.
 
 All required steps for the project-based evaluation have been completed.
 <img width="1915" height="958" alt="image" src="https://github.com/user-attachments/assets/37b4d77a-1622-43f0-ad06-d7095689277c" />
@@ -424,7 +424,7 @@ All required steps for the project-based evaluation have been completed.
 
 ---
 
-## 📥 Clone the Repository
+##  Clone the Repository
 
 Clone this project to your local machine:
 
