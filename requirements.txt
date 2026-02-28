@@ -1,0 +1,18 @@
+# DocuMind — Python dependencies
+
+# Endee Vector Database SDK
+endee>=0.1.0
+
+# Embedding model
+sentence-transformers>=2.7.0
+
+# Web framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+
+# LLM integration (optional — only needed for generative mode)
+openai>=1.30.0
+
+# Utilities
+pydantic>=2.7.0

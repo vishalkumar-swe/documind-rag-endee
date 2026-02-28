@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+
+  # ── Endee Vector Database ──────────────────
+  endee:
+    image: endeeio/endee-server:latest
+    container_name: endee-server
+    ports:
+      - "8080:8080"
+    ulimits:
+      nofile: 100000
+    environment:
+      NDD_NUM_THREADS: 0        # auto-detect CPU threads
+      NDD_AUTH_TOKEN: ""        # leave blank for open mode
+    volumes:
+      - endee-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v1/index/list"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── DocuMind Application ───────────────────
+  documind:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: documind-app
+    ports:
+      - "8010:8000"
+    environment:
+      ENDEE_HOST:       "http://endee:8080"
+      ENDEE_AUTH_TOKEN: ""
+      OPENAI_API_KEY:   "${OPENAI_API_KEY:-}"   # optional
+      OPENAI_MODEL:     "gpt-4o-mini"
+    depends_on:
+      endee:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  endee-data:
