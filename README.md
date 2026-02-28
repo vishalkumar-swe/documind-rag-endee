@@ -418,6 +418,14 @@ This project strictly follows the mandatory evaluation guidelines:
 All required steps for the project-based evaluation have been completed.
 <img width="1915" height="958" alt="image" src="https://github.com/user-attachments/assets/37b4d77a-1622-43f0-ad06-d7095689277c" />
 
+## 📥 Clone the Repository
+
+First, clone this repository to your local machine:
+
+```bash
+git clone https://github.com/vishalkumar-swe/documind-rag-endee.git
+cd documind-rag-endee
+
 ```
 
 ---
