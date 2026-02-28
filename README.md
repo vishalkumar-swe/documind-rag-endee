@@ -397,6 +397,27 @@ with open("my_report.txt") as f:
 result = qa.ask("What were the main findings?")
 print(result["answer"])
 # → "The main findings indicate that… [Source: my_report.txt]"
+
+
+---
+
+## ✅ Evaluation Compliance
+
+This project strictly follows the mandatory evaluation guidelines:
+
+- ⭐ Starred the official Endee repository:  
+  https://github.com/endee-io/endee
+
+- 🍴 Forked the Endee repository to my personal GitHub account:  
+  https://github.com/vishalkumar-swe/endee
+
+- 🧠 Implemented a complete RAG (Retrieval-Augmented Generation) system using Endee as the core vector database.
+
+- 🚀 Hosted the full project publicly on GitHub with complete setup and execution instructions.
+
+All required steps for the project-based evaluation have been completed.
+<img width="1915" height="958" alt="image" src="https://github.com/user-attachments/assets/37b4d77a-1622-43f0-ad06-d7095689277c" />
+
 ```
 
 ---
